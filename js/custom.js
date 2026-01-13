@@ -20,12 +20,12 @@ const observer = new IntersectionObserver(entries => {
                     counters.innerText = Math.ceil(current + increment).toLocaleString();
                     setTimeout(update, 30);
                     }else{
-                        counter.innerText = target >= 1000?  `{target / 1000}k+` : `${target}+`;
+                        counter.innerText = target >= 1000 ?  `${target / 1000}k+` : `${target}+`;
                         }
                     };
                     update();
                     observer.unobserve(counter);
                 }
             });
-        }
-    )
+        }, {threshold :0.5});
+    counters.forEach(c => observer.observer(c));

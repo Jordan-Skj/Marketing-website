@@ -1,113 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <title>Digital Agency | Stratégie & Marketing Digital DRC</title>
+    
+    <!-- Typographies professionnelles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <!-- Header -->
-    <header id="mainHeader">
-        <div class="logo">
-            <i class="bx bxl-magento"></i> MarkNet
-        </div>
-        <nav id="nav">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Services</a>
-            <a href="#">Contact Us</a>
-            <a href="#" class="primaryBtn">Get Started</a>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container nav">
+            <a href="#" class="nav__logo">Digital Agency</a>
+            
+            <ul class="nav__list">
+                <li><a href="#services" class="nav__link">Services</a></li>
+                <li><a href="#about" class="nav__link">À propos</a></li>
+                <li><a href="#pricing" class="nav__link">Tarifs</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__actions">
+                <a href="#" class="btn btn--outline" style="padding: 10px 20px;">Devis</a>
+                <a href="#" class="btn btn--primary" style="padding: 10px 20px;">Contact</a>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <main>
+        <!-- HERO -->
+        <section class="container hero">
+            <div class="hero__content">
+                <span class="badge">Innovation & Stratégie</span>
+                <h1 class="hero__title">Propulsez votre marque au <span>sommet</span></h1>
+                <p class="hero__desc">Digital Agency accompagne les entreprises congolaises dans leur transformation numérique avec des solutions créatives et data-driven.</p>
+                <div class="hero__btns">
+                    <a href="#contact" class="btn btn--primary">Démarrer un projet</a>
+                    <a href="#services" class="btn btn--outline">Voir nos services</a>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <!-- Image Principale -->
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800" class="hero__img-main" alt="Équipe de travail">
+                <!-- Image Secondaire qui chevauche -->
+                <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=400" class="hero__img-sub" alt="Analyse digitale">
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="section services">
+            <div class="container">
+                <div class="text-center">
+                    <span class="badge">Expertise</span>
+                    <h2>Ce que nous faisons</h2>
+                </div>
+
+                <div class="services__grid">
+                    <article class="service-card">
+                        <div class="service-card__icon">📱</div>
+                        <h3>Social Media</h3>
+                        <p>Stratégie de contenu, gestion de communauté et influence marketing sur tous vos réseaux.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon">🎨</div>
+                        <h3>Contenu Créatif</h3>
+                        <p>Production vidéo, photographie et design graphique pour une identité visuelle forte.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-card__icon">🚀</div>
+                        <h3>Publicité Ads</h3>
+                        <p>Campagnes Facebook, Instagram et Google Ads optimisées pour votre conversion.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- POURQUOI NOUS -->
+        <section id="about" class="section container why-us">
+            <div class="why-us__visual">
+                <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800" alt="Réunion agence" style="border-radius: var(--radius-lg);">
+            </div>
+            <div class="why-us__content">
+                <span class="badge">Différenciation</span>
+                <h2>Pourquoi nous ?</h2>
+                
+                <div class="feature-box">
+                    <div class="feature-box__number">01</div>
+                    <div>
+                        <h4>Expertise Locale</h4>
+                        <p>Une compréhension profonde du marché congolais pour des résultats concrets.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-box__number">02</div>
+                    <div>
+                        <h4>Approche sur mesure</h4>
+                        <p>Pas de solutions génériques. Chaque stratégie est sculptée pour vos besoins.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <div class="feature-box__number">03</div>
+                    <div>
+                        <h4>Transparence totale</h4>
+                        <p>Des rapports détaillés et un suivi régulier pour chaque dollar investi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TARIFS -->
+        <section id="pricing" class="section pricing">
+            <div class="container">
+                <div class="text-center">
+                    <span class="badge">Investissement</span>
+                    <h2>Nos plans tarifaires</h2>
+                </div>
+
+                <div class="pricing__grid">
+                    <!-- Basic -->
+                    <div class="price-card">
+                        <span class="price-card__tag">Starter</span>
+                        <div class="price-card__val">250$<span>/mois</span></div>
+                        <ul class="price-features price-card__list">
+                            <li>2 réseaux sociaux</li>
+                            <li>3 publications / semaine</li>
+                            <li>Rapport mensuel</li>
+                            <li>Support email</li>
+                        </ul>
+                        <a href="#" class="btn btn--outline" style="width: 100%;">Commander</a>
+                    </div>
+
+                    <!-- Recommended -->
+                    <div class="price-card price-card--featured">
+                        <span class="price-card__tag">Business</span>
+                        <div class="price-card__val">550$<span>/mois</span></div>
+                        <ul class="price-features price-card__list">
+                            <li>4 réseaux sociaux</li>
+                            <li>Posts quotidiens + Stories</li>
+                            <li>Campagne Ads incluse</li>
+                            <li>Shooting photo (1h)</li>
+                            <li>Support prioritaire</li>
+                        </ul>
+                        <a href="#" class="btn btn--primary" style="width: 100%;">Plus populaire</a>
+                    </div>
+
+                    <!-- Enterprise -->
+                    <div class="price-card">
+                        <span class="price-card__tag">Premium</span>
+                        <div class="price-card__val">1200$<span>/mois</span></div>
+                        <ul class="price-features price-card__list">
+                            <li>Réseaux illimités</li>
+                            <li>Production Vidéo / Reels</li>
+                            <li>SEO & Web Design</li>
+                            <li>Consultant dédié</li>
+                            <li>Stratégie annuelle</li>
+                        </ul>
+                        <a href="#" class="btn btn--outline" style="width: 100%;">Contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TÉMOIGNAGES -->
+        <section class="section container">
+            <div class="text-center">
+                <h2>Ils nous font confiance</h2>
+            </div>
+            <div class="testi-grid" style="margin-top: 50px;">
+                <article class="testi-card">
+                    <div class="testi-card__stars">★★★★★</div>
+                    <p>« Un impact immédiat sur notre visibilité à Kinshasa. L'équipe est incroyablement créative. »</p>
+                    <div style="margin-top: 20px;"><strong>Alain T.</strong> - CEO Tech</div>
+                </article>
+                <article class="testi-card">
+                    <div class="testi-card__stars">★★★★★</div>
+                    <p>« Professionnels et à l'écoute. Leurs campagnes de pub nous ont ramené 3x plus de clients. »</p>
+                    <div style="margin-top: 20px;"><strong>Sarah K.</strong> - Boutique Mode</div>
+                </article>
+                <article class="testi-card">
+                    <div class="testi-card__stars">★★★★★</div>
+                    <p>« Enfin une agence qui comprend les enjeux locaux avec une qualité internationale. »</p>
+                    <div style="margin-top: 20px;"><strong>Marc L.</strong> - Restauration</div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <div class="container">
-            <div class="hero-text" data-aos="fade-right">
-                <span class="tag">#PREMIUM SERVICES</span>
-                <h1>Welcome to <br> Creative Digital <br> <span>Agency</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quae laborum, voluptatibus quas, delectus, accusamus similique nostrum repellendus error sequi repellat ut temporibus. Quam alias voluptatem sapiente facilis ratione vero.</p>
-
-                <a href="#" class="outlineBtn">OUR SERVICES</a>
-                <a href="#" class="primaryBtn">DISCOVER MORE</a>
-
+            <a href="#" class="footer__logo">Digital Agency</a>
+            <div class="footer__links">
+                <a href="#">Services</a>
+                <a href="#">Tarifs</a>
+                <a href="#">Projets</a>
+                <a href="#">Blog</a>
             </div>
-
-            <div class="hero-image" data-aos="fade-left">
-                <div class="shape"></div>
-                <img src="images/f1.png" class="heroIcon1">
-                <img src="images/f2.png" class="heroIcon2">
-                <img src="images/f3.png" class="heroIcon3">
-            </div>
+            <p class="footer__copy">© 2025 Digital Agency DRC. Conçu avec passion à Kinshasa.</p>
         </div>
-    </section>
+    </footer>
 
-    <section class="counter-section">
-        <div class="conterr-nox">
-            <div class="fade-left">
-                <h2 class="counter-title" data-target="10000">0</h2>
-                <p>Project completed</p>
-            </div>
-            <div data-aos="fade-down">
-                <h2 class="counter" data-target="1500">0</h2>
-                <p>Active clients</p>
-            </div>
-            <div data-aos="fade-right">
-                <h2 class="counter" data-target="850">0</h2>
-                <p>Cup of COffee</p>
-            </div>
-            <div data-aos="fade-up">
-                <h2 class="counter" data-target="7000">0</h2>
-                <p>Happy CLients</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-
-    <section class="about-section">
-        <div class="about-container">
-            <div class="img-shape">
-                <div class="shape1"></div>
-            </div>
-        </div>
-
-        <div class="about-content" data-aos="fade-right">
-            <h3 class="subheading">ABOUT US</h3>
-            <h2 class="heading">
-                MarketNEt IS THE BEST DIGITAL AGENCY <span style="color:var(--primary-color);"></span> IN WORLD
-            </h2>
-            <br>
-            <p class="commonPara">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque expedita aut cum ut sint nesciunt itaque perspiciatis quia quidem laborum, ab necessitatibus doloremque esse dolor fugiat odit mollitia quod unde!
-            </p>
-            <br>
-            <ul class="feature-list">
-                <ul class="feature-list">
-                    <li><i class="bx bxs-chexk-square"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, natus placeat blanditiis architecto consequatur nesciunt, esse ducimus eos asperiores quos culpa rem quod assumenda? Placeat unde et facere fuga consequuntur?</li>
-                    <li><i class="bx bxs-chexk-square"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, natus placeat blanditiis architecto consequatur nesciunt, esse ducimus eos asperiores quos culpa rem quod assumenda? Placeat unde et facere fuga consequuntur?</li>
-                    <li><i class="bx bxs-chexk-square"></i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, natus placeat blanditiis architecto consequatur nesciunt, esse ducimus eos asperiores quos culpa rem quod assumenda? Placeat unde et facere fuga consequuntur?</li>
-                </ul>
-            </ul>
-
-            <div class="signature">
-                im
-            </div>
-        </div>
-    </section>
-
-    <!-- Swiper JS -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-     <script src="js/custom.js"></script>
 </body>
 </html>

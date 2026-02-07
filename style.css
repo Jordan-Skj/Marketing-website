@@ -431,6 +431,64 @@ img {
 }
 
 /* ==========================================================================
+           8. CALL TO ACTION SECTION
+           ========================================================================== */
+.cta {
+    background: linear-gradient(135deg, var(--clr-primary) 0%, #0047a3 100%);
+    color: var(--clr-white);
+}
+
+.cta__content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta__title {
+    font-size: 3rem;
+    margin-bottom: 24px;
+    color: var(--clr-white);
+}
+
+.cta__desc {
+    font-size: 1.2rem;
+    margin-bottom: 48px;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.8;
+}
+
+.cta__buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta__buttons a {
+    font-size: 1rem;
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: 0.3s transform ease, 0.3s box-shadow ease;
+}
+
+.cta__buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.btn--outline-alt {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: var(--clr-white);
+    border: 2px solid var(--clr-white);
+}
+
+.btn--outline-alt:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-color: var(--clr-white);
+}
+
+/* ==========================================================================
            9. RESPONSIVE DESIGN (Mobile First)
            ========================================================================== */
 @media (max-width: 1024px) {
@@ -470,6 +528,23 @@ img {
 
     .nav__list {
         display: none;
+    }
+
+    .cta__title {
+        font-size: 2rem;
+    }
+
+    .cta__desc {
+        font-size: 1rem;
+    }
+
+    .cta__buttons {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cta__buttons a {
+        width: 100%;
     }
 
     /* Menu burger à implémenter */
